@@ -137,11 +137,6 @@ int main( int argc, char *argv[] )
                 {
                     auto count = tag >> 1;
 
-                    input_file.seekg( bitmap.offsets[i] + 1, std::fstream::beg );
-
-                    uint16_t tag2;
-                    read( tag2, input_file );
-
                     // Color block
                     if ( tag & 0x01 )
                     {
